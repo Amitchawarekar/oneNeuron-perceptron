@@ -1,18 +1,22 @@
-    """
+"""
    author : Amit
    email : amit.chawarekar@gmail.com
-    """
+"""
 
 
 from utils.model import Perceptron 
 from utils.all_utils import prepare_data, save_plot, save_model
 import pandas as pd
 import numpy as np
+import logging
+
+logging_string = "[%(asctime)s: %(levelname)s :%(module)s] %(message)s"
+logging.basicConfig(Level=logging.INFO , format = logging_string)
 
 def main(data, eta, epochs, filename, plotfilename):
     
     df = pd.DataFrame(data)
-    print(df)
+    logging.info(f"This is the actual dataframe{df}")
     X,y = prepare_data(df)
 
 

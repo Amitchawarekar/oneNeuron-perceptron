@@ -7,6 +7,15 @@ import os
 
 plt.style.use("fivethirtyeight")
 def prepare_data(df):
+  """[summary]
+
+  Args:
+      df ([type]): [description]
+
+  Returns:
+      [type]: [description]
+  """"""
+"""
   X = df.drop("y", axis=1)
 
   y = df["y"]
