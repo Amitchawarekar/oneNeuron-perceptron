@@ -5,4 +5,4 @@
 ![sample image](plots/and.png)
 
 
-<img src="plots/and.png" alt="and" , width="500" ,height="600">
+<img src="plots/and.png" alt="and" width="500" height="600">
